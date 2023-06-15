@@ -1,9 +1,9 @@
 const scope = "global";
-const inGlobal = "I exist in global scope!"
+const inGlobal = "I exist in global scope!";
 
 function printScopeExample() {
   const scope = "function inside global";
-  const inFunction = "I exist in the function's scope!"
+  const inFunction = "I exist in the function's scope!";
 
   for (let i = 1; i <= 2; i++) {
     const scope = "loop inside function inside global";
@@ -15,13 +15,13 @@ function printScopeExample() {
   }
 
   console.log("my scope is", scope);
-  console.log(inLoopIteration);
+  // console.log(inLoopIteration);
   console.log(inFunction);
   console.log(inGlobal);
 }
 
 printScopeExample();
 console.log("my scope is", scope);
-console.log(inLoopIteration);
-console.log(inFunction);
+// console.log(inLoopIteration);
+// console.log(inFunction);
 console.log(inGlobal);
